@@ -11,7 +11,7 @@ pip3 install jinja jinja2-cli svglib
 ### Generate certificate
 
 ```
-jinja2 swc-attendance.svg -D name="Firstname Lastname" -D date="Nov. 6, 2022" -D instructor="Some Instructor Name" > generated_certificate.svg && svg2pdf generated_certificate.svg
+jinja2 swc-hsf-iris-hep-attendance.svg -D name="Firstname Lastname" -D date="Nov. 6, 2022" -D instructor="Some Instructor Name" > generated_certificate.svg && svg2pdf generated_certificate.svg
 ```
 
 The certificate is now available as `generated_certificate.pdf`.
