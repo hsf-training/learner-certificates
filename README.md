@@ -1,13 +1,23 @@
 # Certificates for The Carpentries
 
+## Pure python method
 
-There are two ways to build certificates from this repo, one depends on the python package cairosvg which in turn depends on cairo development libraries being installed. To use this method, use `bin/certificates.py` to build certificates.
+### Install required packages
 
-The second, pure python method uses the python packages jinja2, jinja2-cli and svglib to build the certificates.
-
-To build certificates this way, you can run:
 ```
-jinja2 swc-attendance.svg -D name="Firstname Lastname" -D date="Nov. 6, 2017" -D instructor="Some Instructor Name" > lastname_firstname.svg
-svg2pdf lastname_firstname.svg 
+pip3 install jinja jinja2-cli svglib
 ```
+
+### Generate certificate
+
+```
+jinja2 swc-attendance.svg -D name="Firstname Lastname" -D date="Nov. 6, 2022" -D instructor="Some Instructor Name" > generated_certificate.svg && svg2pdf generated_certificate.svg
+```
+
+The certificate is now available as `generated_certificate.pdf`.
+
+## Alternative method with cairosvg
+
+This depends ont he python package cairosvg which in turn depends on cairo development libraries being installed. To use this method, use `bin/certificates.py` to build certificates.
+
 
