@@ -1,5 +1,7 @@
 # Certificates for The Carpentries
 
+This repository generates certificates for participants.
+
 ## Pure python method
 
 ### Install required packages
