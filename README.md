@@ -20,4 +20,4 @@ The certificate is now available as `generated_certificate.pdf`.
 
 ## Alternative method with cairosvg
 
-This depends ont he python package cairosvg which in turn depends on cairo development libraries being installed. To use this method, use `bin/certificates.py` to build certificates.
+This depends on the python package cairosvg which in turn depends on cairo development libraries being installed. To use this method, use `bin/certificates.py` to build certificates.
